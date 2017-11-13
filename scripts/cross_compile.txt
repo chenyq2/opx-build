@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-20T09:33:05+08:00
+
+====== cross compile ======
+Created Tuesday 20 December 2016
+
+===== valgrind =====
+[[./configure]] --host='powerpc-fsl_networking-linux-gnuspe' CC='powerpc-fsl_networking-linux-gnuspe-gcc' CXX='powerpc-fsl_networking-linux-gnuspe-g++' --prefix=/ctcdata/users/sw/wangqj/softwares_for_board/ppc/valgrind
+
+[[./configure]] --host='powerpc-fsl_networking-linux-gnuspe' CC='powerpc-fsl_networking-linux-gnuspe-gcc' CXX='powerpc-fsl_networking-linux-gnuspe-g++' --prefix=/ctcdata/users/sw/wangqj/softwares_for_board/ppc/valgrind1 --with-PACKAGE=no --enable-FEATURE=no
+
+
+===== tmux =====
+./configure --enable-static --prefix=/ctcdata/users/sw/wangqj/softwares_for_uml/25 CC='gcc -m32' CXX='g++ -m32' CFLAGS='-I/ctcdata/users/sw/wangqj/softwares_for_uml/25/include/' LDFLAGS='--static -L/ctcdata/users/sw/wangqj/softwares_for_uml/25/lib' CPPFLAGS='-I/ctcdata/users/sw/wangqj/softwares_for_uml/25/include/'
+
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/ctcdata/users/sw/wangqj/softwares_for_uml/25/lib/
+
+
+===== 29 tmux =====
+./configure --enable-static --prefix=/ctcdata/users/sw/wangqj/softwares_for_uml/29 CC='gcc -m32' CXX='g++ -m32' CFLAGS='-I/ctcdata/users/sw/wangqj/softwares_for_uml/29/include/' LDFLAGS='--static -L/ctcdata/users/sw/wangqj/softwares_for_uml/29/lib' CPPFLAGS='-I/ctcdata/users/sw/wangqj/softwares_for_uml/29/include/'
+
+[[./configure]] --prefix=/ctcdata/users/sw/wangqj/softwares_for_uml/29 CC='gcc -m32' CXX='g++ -m32' CFLAGS='-I/ctcdata/users/sw/wangqj/softwares_for_uml/29/include/' LDFLAGS='-L/ctcdata/users/sw/wangqj/softwares_for_uml/29/lib'
