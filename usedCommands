@@ -1,0 +1,31 @@
+
+DOCKER:
+docker images
+docker run -it 95a549487298(IMAGEID) bash
+docker run --rm -it <image id> bash
+
+VNC:
+vncserver -geometry 1600x900
+1280x1024
+vncserver -kill :11
+
+
+git submodule update --init --recursive
+git clone --recursive https://github.com/Azure/sonic-buildimage.git
+
+
+REDIS:
+select 0 //select db, it is appDB in SONiC
+select 1 //select db, it is ASICDB in SONiC
+
+keys * //dump all keys
+keys PORT_TABLE* //dump all PORT_TABLE key
+HGETALL PORT_TABLE:Ethernet2 //get Ethernet2 information
+
+linux:
+python -m pyftpdlib -p 60100 -w -r 60100-60110
+
+
+
+
+
